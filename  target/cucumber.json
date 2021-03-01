@@ -1,0 +1,126 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3096724079,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "basket test",
+        "description": "",
+        "id": "basket-test;basket-test",
+        "after": [
+          {
+            "result": {
+              "duration": 173952982,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 147651835,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i am on home page",
+            "match": {
+              "location": "CommanStepsDef.i_am_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1643955395,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i do search product \"nike\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nike",
+                  "offset": 21
+                }
+              ],
+              "location": "SearchStepsDef.i_do_search_product(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1516110334,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"/product/9056055?clickSR\u003dslp:term:nike:23:61:1\" data-test\u003d\"component-product-card-title\" target\u003d\"_self\" itemprop\u003d\"name\" class\u003d\"ProductCardstyles__Title-sc-1fgptbz-12 jdEaFQ\"\u003e...\u003c/a\u003e is not clickable at point (874, 662). Other element would receive the click: \u003cdiv class\u003d\"consent_prompt_footer\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d87.0.4280.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Mayurkumars-MacBook-Pro.local\u0027, ip: \u0027fd48:3c0c:518a:ca00:34ce:d59f:61c:afcc%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/pq/rn2np1wx2kg...}, goog:chromeOptions: {debuggerAddress: localhost:63098}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: d4863aa8a1a385d1b0df2347046be3fd\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat page_object.ResultPage.selectAnyProduct(ResultPage.java:17)\n\tat com.vinus.qa.Steps.BasketStepDef.i_do_see_respected_product(BasketStepDef.java:23)\n\tat ✽.And i do see respected product(basket.feature:14)\n",
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "i do see respected product",
+            "match": {
+              "location": "BasketStepDef.i_do_see_respected_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "i do add to trolley",
+            "match": {
+              "location": "BasketStepDef.i_do_add_to_trolley()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "i do go to trolley",
+            "match": {
+              "location": "BasketStepDef.i_do_go_to_trolley()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "i shoud be see all respected product in trolley",
+            "match": {
+              "location": "BasketStepDef.i_shoud_be_see_all_respected_product_in_trolley()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "basket test",
+    "description": "\nas an end user\ni want to do search product\nso that i add in the basket",
+    "id": "basket-test",
+    "keyword": "Feature",
+    "uri": "basket.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@basket"
+      }
+    ]
+  }
+]

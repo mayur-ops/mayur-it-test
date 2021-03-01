@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3629094433,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "search",
+        "description": "",
+        "id": "search;search",
+        "after": [
+          {
+            "result": {
+              "duration": 128140711,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 113301477,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i am on home page",
+            "match": {
+              "location": "searchSteps.i_am_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2241222536,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i do search for a hotels in \"London\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "London",
+                  "offset": 29
+                }
+              ],
+              "location": "searchSteps.i_do_search_for_a_hotels_in(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187954592,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i do select the hotels available in london",
+            "match": {
+              "location": "searchSteps.i_do_select_the_hotels_available_in_london()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "search",
+    "description": "As a new user\nso that search for travelodge hotels in london\ni want to book the hotels",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "search.feature"
+  }
+]
